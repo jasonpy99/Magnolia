@@ -1,4 +1,6 @@
-# green_tea_in_China
+Magnolia denudata
+玉兰花，起源于中国，初春开花，先开花而后长叶
+
 Jack Ma will tell you which kind of green teas are popular in China!
 
 Step0: in config.py, you can change the key word(for example: you can change "绿茶" to "红茶"), or change the database name and the collection name. 
