@@ -6,10 +6,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from pyquery import PyQuery as pq
 import sys
-import pymongo
-from config import *
 
 reload(sys) # Python2.5 初始化后会删除 sys.setdefaultencoding 这个方法，我们需要重新载入
 sys.setdefaultencoding('utf-8')
