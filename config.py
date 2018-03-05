@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 
-MONGO_URL='localhost'
-MONGO_DB='taobao_tea'
-MONGO_TABLE='taobao_tea_lv'
-
-KEYWORD=u'绿茶'
-
+CHROMEDRIVER = '/Users/sunan/ENV_package/magnolia/lib/python3.5/chromedriver'
+MYSQLCONFIG = {
+    'host': 'rm-bp1pyu5wq71ufm9a5.mysql.rds.aliyuncs.com',
+    'user': 'euler',
+    'password': 'eulereigen123',
+    'port': 3306,
+    'database': 'euler_dev',
+    'charset': 'utf8'
+}
