@@ -9,15 +9,28 @@ class MysqlDriver(object):
         self.cursor = self.cnn.cursor()
         pass
 
-    def put(self, sql, sql_dict):
+    def put(self, query, query_dict):
         """
         上传
-        :param sql: sql语句
-        :param sql_dict: 参数
+        :param query: sql语句
+        :param query_dict: 参数
         """
-        self.cursor.execute(sql, sql_dict)
+        self.cursor.execute(query, query_dict)
         self.cnn.commit()
 
     def close(self):
         self.cursor.close()
         self.cnn.close()
+
+    def fetch(self, query):
+        """
+        获取
+        :param query: sql语句
+        :return:
+        """
+        result = []
+        self.cursor.execute(query)
+        for item in self.cursor:
+            result.append(item)
+        return result
+
